@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Repair Section -->
+    <section class="repair" id="repair">
+        <h1>We Repair It Like A New</h1>
+        <div class="container">
+            <form action="save.php" method="post" id="mainForm">
+                <div id="form1">
+                    <h3>Book Your Repair</h3>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="phone" id="Number" placeholder="Phone Number" maxlength="10" required>
+                    <input type="text" name="issues_and_model" placeholder="Issue and Device model" required>
+                    <div class="btn-box">
+                        <button type="button" id="next1">Next</button>
+                    </div>
+                </div>
+                <div id="form2" style="display: none;">
+                    <h3>Select Your Device</h3>
+                    <div class="picture-selection">
+                        <img src="images/iphone.png" alt="Picture 1" onclick="selectDevice('iphone')">
+                        <img src="images/ipad.png" alt="Picture 2" onclick="selectDevice('ipad')">
+                        <img src="images/mac.png" alt="Picture 3" onclick="selectDevice('mac')">
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" id="back1">Back</button>
+                        <button type="button" id="next2">Next</button>
+                    </div>
+                </div>
+                <div id="form3" style="display: none;">
+                    <h3>Enter Your Address</h3>
+                    <input type="text" name="address" placeholder="Your Address" required>
+                    <div class="btn-box">
+                        <button type="button" id="back2">Back</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col">Contact Info</div>
+                <div class="step-col">Choose Device</div>
+                <div class="step-col">Your Location</div>
+            </div>
+        </div>
+    </section>
+<!-- JavaScript -->
+<script>
+    var form1 = document.getElementById('form1');
+    var form2 = document.getElementById('form2');
+    var form3 = document.getElementById('form3');
+
+    var next1 = document.getElementById('next1');
+    var next2 = document.getElementById('next2');
+    var back1 = document.getElementById('back1');
+    var back2 = document.getElementById('back2');
+
+    var progress = document.getElementById('progress');
+
+    next1.onclick = function () {
+        form1.style.display = "none";
+        form2.style.display = "block";
+        progress.style.width = "240px";
+    }
+    back1.onclick = function () {
+        form1.style.display = "block";
+        form2.style.display = "none";
+        progress.style.width = "120px";
+    }
+    next2.onclick = function () {
+        form2.style.display = "none";
+        form3.style.display = "block";
+        progress.style.width = "360px";
+    }
+    back2.onclick = function () {
+        form2.style.display = "block";
+        form3.style.display = "none";
+        progress.style.width = "240px";
+    }
+         //home 
+         var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+
+</script>
+</body>
+</html>

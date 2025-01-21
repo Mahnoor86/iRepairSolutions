@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRepair's Solution</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+
+</head>
+
+<body>
+    <section class="header" id="home">
+        <nav>
+            <img src="images/apple.png" alt="logo">
+            <h1>iRepair's Solution</h1>
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-window-close' style='color:#ffffff' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="link"><a href="repair.html">Repair</a></li>                    <li><a href="#store">Store</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#whyus">Why Us</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>iRepair's Solution</h1>
+            <p>
+                Welcome to iRepair's Solution, your trusted destination for professional device repair services using
+                certified tools and equipment.<br> Explore our website to discover how we can help you with your repair
+                needs!
+            </p>
+            <a href="" class="button">Visit Us To Know More</a>
+        </div>
+    </section>
+    <!-- Repai Section
+    <section class="repair" id="repair">
+        <h1>We Repair It Like A New</h1>
+        <div class="container">
+            <form id="form1">
+                <h3>Book Your Repair</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" name="phone" id="Number" placeholder="Phone Number" maxlength="10" required>
+                <input type="text" placeholder="Issue and Device model" required>
+                <div class="btn-box">
+                    <button type="button" id="next1">Next</button>
+                </div>
+            </form>
+            <form id="form2">
+                <h3>Select Your Device</h3>
+                <div class="picture-selection">
+                    <img src="images/iphone.png" alt="Picture 1" onclick="selectDevice('iphone')">
+                    <img src="images/ipad.png" alt="Picture 2" onclick="selectDevice('ipad')">
+                    <img src="images/mac.png" alt="Picture 3" onclick="selectDevice('mac')">
+                </div>
+
+                <div class="btn-box">
+                    <button type="button" id="back1">Back</button>
+                    <button type="button" id="next2">Next</button>
+                </div>
+            </form>
+
+            <form id="form3">
+                <h3>Enter Your Address</h3>
+                <input type="text" placeholder="Your Address" required>
+                <div class="btn-box">
+                    <button type="button" id="back2">Back</button>
+                    <button type="button" onclick="submitForm()">Submit</button>
+                </div>
+            </form>
+            <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col">Contact Info</div>
+                <div class="step-col">Choose Device</div>
+                <div class="step-col">Your Location</div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Store -->
+    <section id="store" class="section">
+        <div id="product1">
+            <br>
+            <h2>Mobile Accessories</h2>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="images/apple_air.png" alt="">
+                    <div class="des">
+                        <span>iPhone</span>
+                        <h5>Apple Airpod Pro2</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>20,000pkr</h4>
+                    </div>
+                    <a href="addtocart.html"><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="images/c_connector.png" alt="">
+                    <div class="des">
+                        <span>iPhone</span>
+                        <h5>C-C connector</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>5000pkr</h4>
+                    </div>
+                    <a href=""><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="images/c_to_c_-removebg-preview.png" alt="">
+                    <div class="des">
+                        <span>iPhone</span>
+                        <h5>C-C Data Cable</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>1500pkr</h4>
+                    </div>
+                    <a href=""><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="images/c_to_m1-removebg-preview.png" alt="">
+                    <div class="des">
+                        <span>iPhone</span>
+                        <h5>C-M1 Data Cable</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>1200pkr</h4>
+                    </div>
+                    <a href=""><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="images/hadphone-removebg-preview.png" alt="">
+                    <div class="des">
+                        <span>iPhone</span>
+                        <h5>HadPhone</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>30,000pkr</h4>
+                    </div>
+                    <a href=""><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="images/m1_handfree-removebg-preview.png" alt="">
+                    <div class="des">
+                        <span>iPhone</span>
+                        <h5>Hand-Free</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>2000pkr</h4>
+                    </div>
+                    <a href=""><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="images/M1_-removebg-preview.png" alt="">
+                    <div class="des">
+                        <span>iPhone</span>
+                        <h5>M1 Data Cable</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>1000pkr</h4>
+                    </div>
+                    <a href=""><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+                <div class="pro">
+                    <img src="images/MHXH3-removebg-preview.png" alt="">
+                    <div class="des">
+                        <span>iPhone</span>
+                        <h5>MHX3 Charger</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>10,000pkr</h4>
+                    </div>
+                    <a href=""><i class='bx bx-cart-alt cart'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us -->
+    <section id="aboutus" claas="ab">
+        <div class="col">
+        <h1>About Us Section</h1>
+        <br>
+        <br>
+        <div class="contain">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mains">
+                        <div class="service">
+                          <div class="service-logo">
+                            <img src="" alt="">
+                          </div>
+                          <h4>Samiullah Tariq</h4>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ratione odit delectus autem, quidem, saepe rem aspernatur totam nulla maxime quis laborum veniam provident et in numquam. Odit, impedit temporibus!</p>
+                        </div>
+                        <div class="shadow1"></div>
+                        <div class="shadow2"></div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="mains">
+                        <div class="service">
+                          <div class="service-logo">
+                            <img src="" alt="">
+                          </div>
+                          <h4>Syed Ashar</h4>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ratione odit delectus autem, quidem, saepe rem aspernatur totam nulla maxime quis laborum veniam provident et in numquam. Odit, impedit temporibus!</p>
+                        </div>
+                        <div class="shadow1"></div>
+                        <div class="shadow2"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mains">
+                        <div class="service">
+                          <div class="service-logo">
+                            <img src="" alt="">
+                          </div>
+                          <h4>Raja Ibraheem</h4>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ratione odit delectus autem, quidem, saepe rem aspernatur totam nulla maxime quis laborum veniam provident et in numquam. Odit, impedit temporibus!</p>
+                        </div>
+                        <div class="shadow1"></div>
+                        <div class="shadow2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <!-- why Us -->
+    <section id="whyus" class="container1">
+        <div >
+            <br>
+            <h2>Why Us</h2>
+            <div class="reasons">
+                <div class="reason">
+                    <i class='bx bx-shield'></i>
+                    <h3>Professional Technicians</h3>
+                    <p>Our team consists of highly skilled and experienced technicians who are experts in repairing a wide range of devices.</p>
+                </div>
+                <div class="reason">
+                    <i class='bx bx-dollar-circle'></i>
+                    <h3>Affordable Prices</h3>
+                    <p>We offer competitive prices for our repair services, ensuring that you get high-quality repairs without breaking the bank.</p>
+                </div>
+                <div class="reason">
+                    <i class='bx bx-stopwatch'></i>
+                    <h3>Quick Turnaround</h3>
+                    <p>With our efficient repair process, we strive to provide quick turnaround times, so you can get your device back as soon as possible.</p>
+                </div>
+                <div class="reason">
+                    <i class='bx bx-wrench'></i>
+                    <h3>Quality Parts</h3>
+                    <p>We use only genuine and high-quality parts for all our repairs, ensuring optimal performance and longevity for your devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contact Us -->
+<section id="contactus" class="contact">
+    <div class="content">
+<h2>Contact Us</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, deleniti in modi doloribus est nostrum velit illo, enim nulla obcaecati autem quis consequuntur asperiores libero eveniet eligendi. Assumenda, perspiciatis sed!</p>
+    </div>
+    <div class="containers">
+       <div class="contactInfo">
+        <div class="box">
+            <div class="icon"><i class='bx bx-map'></i></div>
+            <div class="text">
+                <h3>Adress</h3>
+                <p> Shop no 130<br> Singapure Palaza<br> Saadar</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class='bx bx-phone'></i></div>
+            <div class="text">
+                <h3>Phone Number</h3>
+                <p>+92-1234567890</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class='bx bx-envelope'></i></div>
+            <div class="text">
+                <h3>Email</h3>
+                <p>abc123@gamil.com</p>
+            </div>
+        </div>
+       </div> 
+       <div class="contactForm">
+        <form action="">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <!-- <span>Type Your Message...</span> -->
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+                
+            </div>
+        </form>
+       </div>
+    </div>
+   </section>
+    <!--  footer -->
+    <section class="footer">
+        <p>&copy; 2024 iRepair's Solution. All rights reserved.</p>
+    </section>
+    <!-- Java Script -->
+    <script>
+        //home 
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        // Form
+        var form1 = document.getElementById('form1');
+        var form2 = document.getElementById('form2');
+        var form3 = document.getElementById('form3');
+
+        var next1 = document.getElementById('next1');
+        var next2 = document.getElementById('next2');
+        var back1 = document.getElementById('back1');
+        var back2 = document.getElementById('back2');
+
+        var progress = document.getElementById('progress');
+
+        next1.onclick = function () {
+            form1.style.left = "-450px";
+            form2.style.left = "40px";
+            progress.style.width = "240px"
+        }
+        back1.onclick = function () {
+            form1.style.left = "40px";
+            form2.style.left = "450px";
+            progress.style.width = "120px"
+        }
+        next2.onclick = function () {
+            form2.style.left = "-450px";
+            form3.style.left = "40px";
+            progress.style.width = "360px"
+        }
+        back2.onclick = function () {
+            form2.style.left = "40px";
+            form3.style.left = "450px";
+            progress.style.width = "240px"
+        }
+    </script>
+</body>
+
+</html>

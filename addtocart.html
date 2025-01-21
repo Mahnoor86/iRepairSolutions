@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRepair's Solution</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- Home -->
+    <section class="header" id="home">
+        <nav>
+            <img src="images/apple.png" alt="logo">
+            <h1>iRepair's Solution</h1>
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-window-close' style='color:#ffffff' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <!-- <li><a href="index.html#repai">Repair</a></li>
+                     -->
+                     <li class="link"><a href="repair.php">Repair</a></li>
+
+                    <li><a href="index.html#store">Store</a></li>
+                    <li><a href="index.html#aboutus">About Us</a></li>
+                    <li><a href="index.html#whyus">About Us</a></li>
+                    <li><a href="index.html#contactus">Why Us</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>iRepair's Solution</h1>
+            <p>
+                Welcome to iRepair's Solution, your trusted destination for professional device repair services using
+                certified tools and equipment.<br> Explore our website to discover how we can help you with your repair
+                needs!
+            </p>
+            <a href="" class="button">Visit Us To Know More</a>
+        </div>
+    </section>
+    <!-- Billing -->
+     <section id="products">
+     <table width="100%">
+     <thead>
+        <tr>
+        <td>Cancel</td>
+        <td>Product</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Total Amount</td>
+        </tr>
+     </thead>
+     <tbody>
+        <tr>
+            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td><img src="images/hadphone-removebg-preview.png" alt=""></td>
+            <td>Headphones</td>
+            <td>30,000</td>
+            <td><input type="number" value="1"></td>
+            <td>30,000</td>
+        </tr>
+        <tr>
+            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td><img src="images/c_to_c_-removebg-preview.png" alt=""></td>
+            <td>c-c connector</td>
+            <td>5000</td>
+            <td><input type="number" value="1"></td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td><img src="images/c_to_c_-removebg-preview.png" alt=""></td>
+            <td>c-c Data Cable</td>
+            <td>1500</td>
+            <td><input type="number" value="1"></td>
+            <td>1500</td>
+        </tr>
+     </tbody>
+     </table>
+     </section>
+    
+    <section id="second_section" class="featuresection">
+    <div id="totalamount">
+     <h3>Your Total Amount</h3>
+     <table>
+        <tr>
+            <td>Cart Total Amount</td>
+            <td>70,000</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>70,000</strong></td>
+        </tr>
+     </table>
+     <a href="index.html"><button class="normal">Checkout</button></a>
+    </div>
+    </section>
+    
+
+    <section class="footer">
+        <p>&copy; 2024 iRepair's Solution. All rights reserved.</p>
+    </section>
+    
+
+
+<script>
+     var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+
+</script>
+</body>
+</html>
